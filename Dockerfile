@@ -3,7 +3,7 @@ FROM golang:alpine
 RUN apk add dumb-init && apk add musl && apk add libgcc && apk add libstdc++ && apk add git
 
 # code-server download from https://github.com/cdr/code-server releases, you should choose alpine version corresponding with docker environment. 
-# gopls built from source code, see https://github.com/golang/tools/tree/master/gopls, include in the code base. 
+# gopls built from source code, see https://github.com/golang/tools/tree/master/gopls, included in the code base. 
 # gopls build issues: it must be built in alpine environment, because its clib is not same with other linux dist, which is musl, 
 #                     so you can mount the source code in a alpine docker, then build in the docker 
 COPY code-server gopls /go/bin/
