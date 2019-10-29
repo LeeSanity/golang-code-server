@@ -9,4 +9,4 @@ try it out yourself, prepare requirements according to the [Dockerfile](https://
     docker run -p 8080:8080 -v "${HOME}/workspace:/projects" code-server:v1
 ```
 
-their maybe more args for code-server, see the offical document.
+there maybe more args for code-server, see the offical document.
